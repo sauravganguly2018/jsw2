@@ -1,0 +1,11 @@
+.customDataGrid .MuiDataGrid-cell {
+    border-right: 1px solid black;
+  }
+  
+  .customDataGrid .MuiDataGrid-cell:last-child {
+    border-right: none;
+  }
+  
+  .customDataGrid .MuiDataGrid-columnHeaders {
+    border-bottom: 1px solid black;
+  }

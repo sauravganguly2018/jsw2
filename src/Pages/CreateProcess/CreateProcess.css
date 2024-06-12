@@ -1,0 +1,81 @@
+.main-content {
+    width: 100%;
+    /* max-width: 600px; */
+    margin: 18px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    /* margin-top: 120px; */
+}
+
+.process-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    /* Add some space below the heading */
+}
+
+.file-upload {
+    margin-top: 23px;
+    cursor: pointer;
+}
+
+.file-input {
+    display: none;
+}
+
+.file-label {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.file-icon {
+    margin-right: 10px;
+}
+
+.file-text {
+    font-size: 16px;
+    user-select: none;
+    /* Prevent text selection */
+    pointer-events: none;
+    /* Disable cursor point events */
+}
+
+.uploaded-file-name {
+    margin-top: 15px;
+    
+}
+
+.upload-btn {
+    margin-top: 11px;
+    height: 32px;
+    width: 100%;
+    /* Take full width */
+    max-width: 200px;
+    /* Limit width for larger screens */
+    background: green;
+    color: #fff;
+    border: none;
+    /* Remove default button border */
+    border-radius: 5px;
+    /* Add some rounded corners */
+    cursor: pointer;
+    user-select: none;
+    /* Prevent text selection */
+}
+.error {
+    color: red;
+    margin-top: 10px;
+}
+
+.success {
+    color: green;
+    margin-top: 10px;
+}

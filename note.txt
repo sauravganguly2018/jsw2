@@ -1,0 +1,4 @@
+1.Package Installed:-
+npm install redux react-redux
+npm install react-router-dom
+npm install redux-thunk

@@ -1,0 +1,457 @@
+@import '../../Variables.scss';
+@import '../CommonComponents/Mixins/mixins';
+
+.joining {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 95px;
+
+    &__inner {
+        width: 80%;
+        height: 90%;
+
+        &__content {
+            position: relative;
+            width: 90%;
+            height: 70%;
+            margin: auto;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+
+            &__image {
+                width: 35%;
+                display: flex;
+                align-items: flex-start;
+                padding-bottom: 10px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            &__heading {
+                position: relative;
+                width: 60%;
+                height: 55%;
+                margin-bottom: 50px;
+
+                &> :nth-child(1) {
+                    font-family: barlow;
+                    font-weight: 700;
+                    font-size: 48px;
+                    line-height: 50.4px;
+                    margin-block-start: 0;
+                    margin-block-end: 0;
+                }
+
+                &> :nth-child(2) {
+                    display: inline;
+                    font-family: barlow;
+                    font-weight: 700;
+                    font-size: 75px;
+                    line-height: 69.75px;
+                    vertical-align: middle;
+                    margin-block-start: 0;
+                    margin-block-end: 0;
+                    background-image: linear-gradient(to right, $primary-color-light, $secondary-color-light);
+                    color: transparent;
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                }
+
+                &> :nth-child(3) {
+                    display: inline;
+                    vertical-align: middle;
+                    font-family: barlow;
+                    font-weight: 500;
+                    font-size: 40px;
+                    line-height: 37.2px;
+                    padding-left: 10px;
+                    margin-block-start: 0;
+                    margin-block-end: 0;
+                }
+            }
+
+            &__buttons {
+                position: absolute;
+                bottom: 0;
+
+                .joining__register {
+                    width: 188px;
+                    height: 57px;
+                    padding: 14px 24px;
+                    border: 2px solid $secondary-color-light;
+                    border-radius: 30px;
+                    background-image: linear-gradient(to right, $secondary-color-light, $secondary-color-dark);
+                    gap: 4px;
+                    color: $white;
+                    font-family: barlow;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 25.2px;
+                    color: transparent;
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    cursor: pointer;
+                }
+
+                .joining__login {
+                    width: 108px;
+                    height: 57px;
+                    border-radius: 30px;
+                    gap: 4px;
+                    border: 2px solid $secondary-color-light;
+                    font-family: barlow;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 25.2px;
+                    background-image: linear-gradient(to right, $secondary-color-light, $secondary-color-dark);
+                    margin-left: 15px;
+                    @include webkit__text;
+                    cursor: pointer;
+                }
+
+                .inactive__joining {}
+
+                .active__joining {
+                    -webkit-background-clip: unset;
+                    color: $white;
+                }
+            }
+
+            .joining__lining {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+
+
+                img {
+                    width: 90%;
+                }
+            }
+        }
+
+        &__data {
+            width: 55%;
+            height: 30%;
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            margin: auto;
+            align-items: flex-end;
+
+            &__value> :nth-child(1) {
+                font-family: barlow;
+                font-weight: 600;
+                font-size: 80px;
+                line-height: 84px;
+                background-image: linear-gradient(to right, $secondary-color-light, $secondary-color-dark);
+                margin-block-start: 0;
+                margin-block-end: 0;
+                background-image: linear-gradient(to right, $secondary-color-light, $secondary-color-dark);
+                @include webkit__text;
+            }
+
+            &__value> :nth-child(2) {
+                font-family: barlow;
+                font-weight: 400;
+                font-size: 30px;
+                line-height: 31.5px;
+                margin-block-start: 0;
+                margin-block-end: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .joining {
+        &__inner {
+            width: 90%;
+
+            &__content {
+                &__buttons {
+                    bottom: -40px;
+
+                    .joining__register {
+                        width: 158px;
+                        padding: 12px 20px;
+                        font-size: 20px;
+                        line-height: 21.2px;
+                    }
+
+                    .joining__login {
+                        font-size: 20px;
+                        line-height: 21.2px;
+                    }
+                }
+
+                &__heading {
+                    margin-bottom: 80px;
+
+                    &> :nth-child(1) {
+                        font-size: 43px;
+                        line-height: 45.4px;
+                    }
+
+                    &> :nth-child(2) {
+                        font-size: 70px;
+                        line-height: 64.75px;
+                    }
+
+                    &> :nth-child(3) {
+                        font-size: 34px;
+                        line-height: 32.2px;
+                    }
+                }
+            }
+
+            &__data {
+                align-items: center;
+
+                &__value> :nth-child(1) {
+                    font-size: 70px;
+                    line-height: 74px;
+                }
+
+                &__value> :nth-child(2) {
+                    font-size: 25px;
+                    line-height: 26.5px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1100px) and (min-height:1000px) {
+    .joining {
+        &__inner {
+            &__content {
+                width: 95%;
+                height: 50%;
+
+                &__heading {
+                    height: 25%;
+
+                    &> :nth-child(1) {
+                        font-size: 36px;
+                        line-height: 36.4px;
+                    }
+
+                    &> :nth-child(2) {
+                        font-size: 54px;
+                        line-height: 54.75px;
+                    }
+
+                    &> :nth-child(3) {
+                        font-size: 23px;
+                        line-height: 23.2px;
+                    }
+                }
+
+                &__buttons {
+                    .joining__register {
+                        width: 145px;
+                        font-size: 18px;
+                        line-height: 19.2px;
+                    }
+
+                    .joining__login {
+                        font-size: 18px;
+                        line-height: 19.2px;
+                    }
+                }
+            }
+
+            &__data {
+                width: 70%;
+                gap: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+    .joining {
+        &__inner {
+
+            &__content {
+                height: 50%;
+
+                &__image {
+                    padding-bottom: 3px;
+                }
+
+                &__heading {
+                    height: auto;
+                    margin-bottom: 0;
+
+                    &> :nth-child(1) {
+                        font-size: 20px;
+                        line-height: 20.4px;
+                    }
+
+                    &> :nth-child(2) {
+                        font-size: 30px;
+                        line-height: 30.75px;
+                    }
+
+                    &> :nth-child(3) {
+                        font-size: 14px;
+                        line-height: 14.2px;
+                    }
+                }
+
+                &__buttons {
+                    position: relative;
+                    bottom: 20px;
+                    padding-top: 30px;
+
+                    .joining__register {
+                        height: auto;
+                        width: 100px;
+                        font-size: 15px;
+                        line-height: 15.2px;
+                        padding: 10px 20px;
+                    }
+
+                    .joining__login {
+                        height: auto;
+                        width: 80px;
+                        font-size: 15px;
+                        line-height: 15.2px;
+                        padding: 10px 20px;
+                    }
+                }
+            }
+
+            &__data {
+                width: 70%;
+                gap: 0;
+
+                &__value> :nth-child(1) {
+                    font-size: 40px;
+                    line-height: 40px;
+                }
+
+                &__value> :nth-child(2) {
+                    font-size: 16px;
+                    line-height: 16.5px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+    .joining {
+        &__inner {
+            width: 95%;
+
+            &__content {
+                &__heading> :nth-child(1) {
+                    font-size: 15px;
+                    line-height: 15.4px;
+                }
+
+                &__heading> :nth-child(2) {
+                    font-size: 22px;
+                    line-height: 22.75px;
+                }
+
+                &__heading> :nth-child(3) {
+                    font-size: 12px;
+                    line-height: 12.2px;
+                }
+
+                &__buttons {
+                    .joining__register {
+                        width: 75px;
+                        font-size: 10px;
+                        line-height: 10.2px;
+                        padding: 9px 9px;
+                    }
+
+                    .joining__login {
+                        width: 60px;
+                        font-size: 10px;
+                        line-height: 10.2px;
+                        padding: 9px 9px;
+                    }
+                }
+            }
+
+            &__data {
+                height: 20%;
+
+                &__value> :nth-child(1) {
+                    font-size: 35px;
+                    line-height: 35px;
+                }
+
+                &__value> :nth-child(2) {
+                    font-size: 13px;
+                    line-height: 13.5px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:400px) {
+    .joining {
+        &__inner {
+            &__content {
+                &__heading> :nth-child(1) {
+                    font-size: 12px;
+                    line-height: 12.4px;
+                }
+
+                &__heading> :nth-child(2) {
+                    font-size: 19px;
+                    line-height: 19.75px;
+                }
+
+                &__heading> :nth-child(3) {
+                    font-size: 10px;
+                    line-height: 10.2px;
+                }
+
+                &__buttons {
+                    .joining__register {
+                        width: 70px;
+                        font-size: 9px;
+                        line-height: 9.2px;
+                        padding: 8px 8px;
+                    }
+
+                    .joining__login {
+                        width: 55px;
+                        font-size: 9px;
+                        line-height: 9.2px;
+                        padding: 8px 8px;
+                    }
+                }
+            }
+
+            &__data__value {
+                &> :nth-child(1) {
+                    font-size: 31px;
+                    line-height: 31px;
+                }
+
+                &> :nth-child(2) {
+                    font-size: 11px;
+                    line-height: 11.5px;
+                }
+            }
+        }
+    }
+}

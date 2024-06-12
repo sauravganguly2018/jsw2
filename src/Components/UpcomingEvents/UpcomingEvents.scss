@@ -1,0 +1,581 @@
+@import '../../Variables.scss';
+
+.upcomingEvents {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 95px;
+
+    .outer2 {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 80%;
+
+        .heading2 {
+            display: flex;
+            justify-content: space-between;
+
+            &__left {
+                position: relative;
+                width: 234px;
+                margin-bottom: 20px;
+                color: $black;
+                font-family: "Anek Latin";
+                font-size: 32px;
+                font-weight: 500;
+                line-height: 33.6px;
+            }
+
+            p {
+                margin-block-start: 0;
+                margin-block-end: 0;
+                margin-bottom: 5px;
+            }
+
+            img {
+                position: absolute;
+                width: 110%;
+                right: -15px;
+            }
+
+            &__right {
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+                margin-right: 10px;
+
+                a {
+                    font-family: "Anek Latin";
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 22px;
+                    color: $primary-color;
+                    margin-top: 10px;
+                }
+            }
+        }
+
+        .outer3 {
+            display: flex;
+            justify-content: space-between;
+            height: 85%;
+            margin-top: 20px;
+
+            .calendar {
+                width: 40%;
+                height: 100%;
+                border-radius: 4px 24px 4px 24px;
+                box-shadow: 0px 1px 2px 0px rgba(35, 35, 47, 0.06), 0px 4px 8px 0px rgba(35, 35, 47, 0.08);
+
+                img {
+                    width: 100%;
+                    height: 110%;
+                }
+            }
+
+            .cards {
+                position: relative;
+                display: flex;
+                justify-content: space-around;
+                width: 58%;
+                height: 100%;
+
+                .pagination {
+                    position: absolute;
+                    width: 100%;
+                    display: flex;
+                    gap: 10px;
+                    justify-content: center;
+                    align-items: center;
+                    bottom: 0px;
+
+                    .inactive__pagination {
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 8px;
+                        background-color: $secondary-color;
+                    }
+
+                    .active__pagination {
+                        width: 24px;
+                        height: 8px;
+                        border-radius: 16px;
+                        background-color: $secondary-color;
+                    }
+                }
+
+                .card {
+                    width: 45%;
+                    height: 95%;
+                    border-radius: 4px 24px 4px 24px;
+                    overflow: hidden;
+                    box-shadow: 0 1px 2px 0 rgba(35, 35, 47, 0.06), 0 4px 8px 0 rgba(35, 35, 47, 0.08);
+
+                    .card__image {
+                        width: 100%;
+                        height: 50%;
+                    }
+
+                    .cardContent {
+                        width: 100%;
+                        height: 50%;
+                        padding: 16px;
+
+                        .cardSubtitle {
+                            color: $black-light;
+                            font-family: "Anek Latin";
+                            font-size: 14px;
+                            font-weight: 500;
+                            line-height: 15.4px;
+                            font-family: Anek Latin;
+
+                        }
+
+                        .cardHeading {
+                            color: $black-light;
+                            font-family: "Anek Latin";
+                            font-size: 20px;
+                            font-weight: 600;
+                            line-height: 24px;
+                            margin: 4px 0;
+                        }
+
+                        svg {
+                            width: 100%;
+                        }
+
+                        .cardText {
+                            overflow: hidden;
+                            color: $black-light;
+                            text-overflow: ellipsis;
+                            font-family: "Anek Latin";
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 17.6px;
+                            margin-bottom: 5px;
+
+                            p {
+                                margin-block-start: 0;
+                                margin-block-end: 0;
+                            }
+                        }
+
+                        .learnMore {
+                            margin-top: 20px;
+                            color: $black-light;
+                            font-family: "Anek Latin";
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 17.6px;
+                            text-decoration-line: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1150px) {
+    .upcomingEvents {
+        .outer2 {
+            .outer3 {
+                .calendar {
+                    height: 90%;
+                }
+
+                .cards {
+                    height: 95%;
+
+                    .card {
+                        .cardContent {
+                            .cardSubtitle {
+                                font-size: 13px;
+                            }
+
+                            .cardHeading {
+                                font-size: 16px;
+                            }
+
+                            .cardText {
+                                font-size: 13px;
+                                margin-bottom: 18px;
+                            }
+
+                            .learnMore {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1050px) {
+    .upcomingEvents {
+        .outer2 {
+            height: 85%;
+
+            .outer3 {
+                .calendar {
+                    height: 100%;
+                }
+
+                .cards {
+                    height: 100%;
+
+                    .card {
+                        .card__image {
+                            height: 50%;
+                        }
+
+                        .cardContent {
+                            height: 45%;
+
+                            .cardSubtitle {
+                                font-size: 12px;
+                            }
+
+                            .cardHeading {
+                                font-size: 11px;
+                            }
+
+                            .cardText {
+                                font-size: 12px;
+                                margin-bottom: 15px;
+                            }
+
+                            .learnMore {
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:950px) {
+    .upcomingEvents {
+        .outer2 {
+            width: 90%;
+
+            .outer3 {
+                height: 65%;
+
+                .calendar {
+                    height: 80%;
+                }
+
+                .cards {
+                    height: 85%;
+
+                    .card {
+                        .cardContent {
+                            .cardSubtitle {
+                                font-size: 10px;
+                            }
+
+                            .cardHeading {
+                                font-size: 12px;
+                            }
+
+                            .cardText {
+                                font-size: 11px;
+                                margin-bottom: 8px;
+                            }
+
+                            .learnMore {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:950px) and (min-height:1200px) {
+    .upcomingEvents {
+        .outer2 {
+            .outer3 {
+                .calendar {
+                    height: 65%;
+                }
+
+                .cards {
+                    height: 65%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:800px) {
+    .upcomingEvents {
+        .outer2 {
+            .outer3 {
+                .cards {
+                    height: 80%;
+
+                    .card {
+                        .cardContent {
+                            .cardSubtitle {
+                                font-size: 9px;
+                            }
+
+                            .cardHeading {
+                                font-size: 11px;
+                            }
+
+                            .cardText {
+                                font-size: 9px;
+                                margin-bottom: 8px;
+                            }
+
+                            .learnMore {
+                                font-size: 9px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+    .upcomingEvents {
+        .outer2 {
+            .heading2 {
+                &__left {
+                    width: 150px;
+                    font-size: 20px;
+                    line-height: 20.6px;
+                }
+
+                img {
+                    right: -10px;
+                }
+
+                &__right {
+                    a {
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            .outer3 {
+                .cards {
+                    .card {
+                        .cardContent {
+                            .cardSubtitle {
+                                font-size: 7px;
+                            }
+
+                            .cardHeading {
+                                font-size: 8px;
+                                line-height: 10px;
+                            }
+
+                            .cardText {
+                                font-size: 6px;
+                                margin-bottom: 0px;
+                                line-height: 10.6px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:450px) {
+    .upcomingEvents {
+        margin-top: -10%;
+
+        .outer2 {
+            width: 80%;
+            height: 80%;
+
+            .heading2 {
+                width: 100%;
+                font-size: 17px;
+
+                &__left {
+                    width: 125px;
+                    font-size: 17px;
+                    line-height: 17.6px;
+                }
+
+                &__right {
+                    a {
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            .outer3 {
+                flex-wrap: wrap;
+                height: 85%;
+                margin-top: 20px;
+
+                .calendar {
+                    width: 100%;
+                    height: 50%;
+
+                    img {
+                        height: 100%;
+                    }
+                }
+
+                .cards {
+                    margin-top: 5%;
+                    width: 100%;
+                    height: 50%;
+
+                    .card {
+                        .card__image {
+                            height: 50%;
+                        }
+
+                        .cardContent {
+                            padding: 12px;
+
+                            .cardSubtitle {
+                                font-size: 6px;
+                            }
+
+                            .cardHeading {
+                                font-size: 7px;
+                            }
+
+                            .cardText {
+                                font-size: 6px;
+                                margin-bottom: 5px;
+                            }
+
+                            .learnMore {
+                                font-size: 6px;
+                                line-height: 9.6px;
+                            }
+                        }
+                    }
+
+                    .pagination {
+                        bottom: -10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:450px) and (min-height:750px) {
+    .upcomingEvents {
+        .outer2 {
+            .outer3 {
+                .cards {
+                    .card {
+                        .card__image {
+                            height: 55%;
+                        }
+
+                        .cardContent {
+                            .cardSubtitle {
+                                font-size: 7px;
+                            }
+
+                            .cardHeading {
+                                font-size: 7px;
+                            }
+
+                            .cardText {
+                                font-size: 7px;
+                                margin-bottom: 0;
+                            }
+
+                            .learnMore {
+                                font-size: 7px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:400px) {
+    .upcomingEvents {
+        .outer2 {
+            .heading2 {
+                &__left {
+                    width: 110px;
+                    font-size: 15px;
+                    line-height: 15.6px;
+                }
+
+                &__right {
+                    a {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .outer3 {
+                .cards {
+                    .card {
+                        .cardContent {
+                            padding: 10px;
+
+                            .cardHeading {
+                                font-size: 6px;
+                            }
+
+                            .cardSubtitle {
+                                font-size: 6px;
+                                line-height: 6.4px;
+                            }
+
+                            .cardHeading {
+                                line-height: 7px
+                            }
+
+                            .cardText {
+                                margin-bottom: 0;
+                                line-height: 5.6px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:350px) {
+    .upcomingEvents {
+        .outer2 {
+            .outer3 {
+                .cards {
+                    .card {
+                        .cardContent {
+                            .cardText {
+                                line-height: 8.6px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

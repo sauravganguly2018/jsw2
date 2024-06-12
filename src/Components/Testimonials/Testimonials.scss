@@ -1,0 +1,502 @@
+@import '../../Variables.scss';
+
+.testimonials {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 95px;
+
+    .testimonialsInner {
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
+        width: 100%;
+
+        .item {
+            width: 20%;
+            height: 50%;
+        }
+
+        .item:last-child:hover{
+            background-image: linear-gradient(to right, $primary-color-light, $secondary-color-light);
+
+            &>:nth-child(1)>:nth-child(1){
+                color:$white;
+            }
+        }
+
+        .content2 {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            background-color: $white-dark;
+
+            .outerText {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 80%;
+                height: 75%;
+
+                .innerText1 {
+                    /* height:60%; */
+                    color: $brown-dark;
+
+                    font-family: barlow;
+                    font-size: 24px;
+                    font-weight: 500;
+                    line-height: 25.8px;
+                }
+
+                .innerText2 {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    /* height:40%; */
+
+                    &> :nth-child(1) {
+                        width: 25px;
+                        height: 25px;
+                        border-radius: 25px;
+                        background-color: $secondary-color;
+                        margin-bottom: 3px;
+                    }
+
+                    &> :nth-child(2) {
+                        color: $brown-dark;
+                        font-family: barlow;
+                        font-size: 16px;
+                        font-weight: 600;
+                        line-height: 16.8px;
+                        margin-block-start: 2px;
+                        margin-block-end: 2px;
+                    }
+
+                    &> :nth-child(3) {
+                        color: $brown-dark;
+                        font-family: barlow;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 14.7px;
+                        margin-block-start: 2px;
+                        margin-block-end: 2px;
+                    }
+
+                    &> :nth-child(4) {
+                        color: $brown-dark;
+                        font-family: "Noto Sans";
+                        font-size: 14px;
+                        font-weight: 500;
+                        line-height: 14.7px;
+                        margin-block-start: 2px;
+                        margin-block-end: 2px;
+                    }
+                }
+
+                .innerText3{
+                    &>:nth-child(1){
+                        opacity:0;
+                        background-color: transparent;
+                        color:$white;
+                        font-family: "Noto Sans";
+                        font-weight: 700;
+                        border:2px solid $white;
+                        border-radius:15px;
+                        padding:5px 10px;
+                        width:auto;
+                        height:auto;
+                        margin-top: 10px;
+                        transition: opacity 1s ease;
+                    }
+                }
+            }
+
+            &.viewMore {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            &__viewMore {
+                width: 80%;
+                align-self: center;
+                justify-self: center;
+
+                &> :nth-child(1) {
+                    color: $brown-dark;
+                    font-family: "Anek Latin";
+                    font-weight: 500;
+                    font-size: 32px;
+                    line-height: 38.4px;
+                    margin-block-start: 0;
+                    margin-block-end: 0;
+
+                    &> :nth-child(1){
+                        color: $brown-dark;
+                    }
+                }
+            }
+
+            &:hover{
+                background-image: linear-gradient(to right,$primary-color, $blue-dark);
+                .outerText{
+                    .innerText1{
+                        color:$white;
+                    }
+                    .innerText2{
+                        &>:nth-child(2){
+                            color:$white;
+                        }
+                        &>:nth-child(3){
+                            color:$white;
+                        }
+                        &>:nth-child(4){
+                            color:$white;
+                        }
+                    }
+                    .innerText3{
+                        &>:nth-child(1){
+                            // display:block;
+                            opacity:1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1150px) {
+    .testimonials {
+        .testimonialsInner {
+            .content2 {
+                .outerText {
+                    justify-content: space-around;
+
+                    .innerText1 {
+                        font-size: 23px;
+                    }
+
+                    .innerText2> :nth-child(1) {
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 20px;
+                    }
+
+                    .innerText2> :nth-child(2) {
+                        font-size: 15px;
+                    }
+
+                    .innerText2> :nth-child(3) {
+                        font-size: 13px;
+                    }
+
+                    .innerText2> :nth-child(4) {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1050px) {
+    .testimonials {
+        .testimonialsInner {
+            .content2 {
+                .outerText {
+                    justify-content: space-evenly;
+
+                    .innerText1 {
+                        // font-size: 20px;
+                        font-size:16px;
+                    }
+
+                    .innerText2> :nth-child(1) {
+                        width: 16px;
+                        height: 16px;
+                        border-radius: 16px;
+                    }
+
+                    .innerText2> :nth-child(2) {
+                        font-size: 13px;
+                    }
+
+                    .innerText2> :nth-child(3) {
+                        font-size: 11px;
+                    }
+
+                    .innerText2> :nth-child(4) {
+                        font-size: 11px;
+                    }
+
+                    .innerText3{
+                        &> :nth-child(1){
+                            font-size: 10px;;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .testimonials {
+        .testimonialsInner {
+            height: 55%;
+
+            .content2 {
+                .outerText {
+                    .innerText1 {
+                        font-size: 18px;
+                        line-height: 21.8px;
+                    }
+
+                    .innerText2> :nth-child(1) {
+                        width: 13px;
+                        height: 13px;
+                        border-radius: 13px;
+                    }
+
+                    .innerText2> :nth-child(2) {
+                        font-size: 13px;
+                        line-height: 14px;
+                    }
+
+                    .innerText2> :nth-child(3) {
+                        font-size: 11px;
+                        line-height: 12px;
+                    }
+
+                    .innerText2> :nth-child(4) {
+                        font-size: 11px;
+                        line-height: 12px;
+                    }
+                }
+
+                &__veiwMore {
+                    &> :nth-child(1) {
+                        font-size: 25px;
+                        line-height: 31.4px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:800px) {
+    .testimonials {
+        .testimonialsInner {
+            .content2 {
+                .outerText {
+                    .innerText1 {
+                        font-size: 14px;
+                    }
+
+                    .innerText2> :nth-child(2) {
+                        font-size: 10px;
+                    }
+
+                    .innerText2> :nth-child(3) {
+                        font-size: 8px;
+                    }
+
+                    .innerText2> :nth-child(4) {
+                        font-size: 8px;
+                    }
+
+                    .innerText3{
+                        &> :nth-child(1){
+                            font-size: 7px;;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .testimonials {
+        .testimonialsInner {
+            .content2 {
+                .outerText {
+                    .innerText1 {
+                        font-size: 11px;
+                        line-height: 15.8px;
+                    }
+
+                    .innerText2> :nth-child(1) {
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 10px;
+                    }
+
+                    .innerText2> :nth-child(2) {
+                        font-size: 8px;
+                        line-height: 10px;
+                    }
+
+                    .innerText2> :nth-child(3) {
+                        font-size: 7px;
+                        line-height: 9px;
+                    }
+
+                    .innerText2> :nth-child(4) {
+                        font-size: 5px;
+                        line-height: 8px;
+                    }
+
+                    .innerText3{
+                        &> :nth-child(1){ 
+        font-size: 6px;
+        padding: 3px 5px;
+        margin-top: 5px;
+        border: 1.5px solid $white;
+                        }
+                    }
+                }
+
+                &__viewMore {
+                    &> :nth-child(1) {
+                        font-size: 17px;
+                        line-height: 22.4px;
+                    }
+
+                    .arrow1 {
+                        width: 35px;
+                        height: 35px;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:450px) {
+    .testimonials {
+        height: 100vh;
+        margin-top: -10%;
+
+        .testimonialsInner {
+            height: 80%;
+
+            .item {
+                border: 1px solid $white;
+                width: 50%;
+                height: 20%;
+            }
+
+            .content2 {
+                .outerText {
+                    .innerText1 {
+                        font-size: 11px;
+                    }
+
+                    .innerText2> :nth-child(1) {
+                        width: 9px;
+                        height: 9px;
+                        border-radius: 9px;
+                    }
+
+                    .innerText2> :nth-child(2) {
+                        font-size: 8px;
+                        line-height: 9px;
+                    }
+
+                    .innerText2> :nth-child(3) {
+                        font-size: 7px;
+                        line-height: 8px;
+                    }
+
+                    .innerText2> :nth-child(4) {
+                        font-size: 6px;
+                        line-height: 7px;
+                    }
+
+                    .innerText3{
+                            &>:nth-child(1){
+                                
+        font-size: 5px;
+        padding: 2px 3px;
+        margin-top: 3px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .testimonials {
+        .testimonialsInner {
+            height: 90%;
+
+            .content2 {
+                .outerText {
+                    .innerText1 {
+                        font-size: 10px;
+                        &>:nth-child(1){
+                            margin:5px 0;
+                        }
+                    }
+
+                    .innerText2> :nth-child(1) {
+                        width: 7px;
+                        height: 7px;
+                        border-radius: 7px;
+                        line-height: 6px;
+                    }
+
+                    .innerText2> :nth-child(2) {
+                        font-size: 7px;
+                        line-height: 6px;
+                    }
+
+                    .innerText2> :nth-child(3) {
+                        font-size: 6px;
+                        line-height: 6px;
+                    }
+
+                    .innerText2> :nth-child(4) {
+                        font-size: 5px;
+                        line-height: 5px;
+                    }
+
+                    .innerText3{
+                        display:flex;
+                        &> :nth-child(1){
+                            font-size: 4px;
+                            padding: 2px 3px;
+                            border: 1px solid $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:350px) {
+    .testimonials {
+        .testimonialsInner {
+            .content2 {
+                .outerText {
+                    .innerText1 {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
