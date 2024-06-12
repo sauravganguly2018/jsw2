@@ -12,7 +12,8 @@
         display: flex;
         flex-direction: column;
         width: 80%;
-        height: 80%;
+        // height: 80%;
+        height: 85%;
 
         .heading2 {
             display: flex;
@@ -20,13 +21,16 @@
 
             &__left {
                 position: relative;
-                width: 234px;
+                // width: 234px;
+                width: 220px;
                 margin-bottom: 20px;
                 color: $black;
                 font-family: "Anek Latin";
-                font-size: 32px;
+                // font-size: 32px;
+                font-size: 30px;
                 font-weight: 500;
-                line-height: 33.6px;
+                // line-height: 33.6px;
+                line-height: 30.6px;
             }
 
             p {
@@ -137,9 +141,11 @@
                         .cardHeading {
                             color: $black-light;
                             font-family: "Anek Latin";
-                            font-size: 20px;
+                            // font-size: 20px;
+                            font-size: 18px;
                             font-weight: 600;
-                            line-height: 24px;
+                            // line-height: 24px;
+                            line-height: 20px;
                             margin: 4px 0;
                         }
 
@@ -152,9 +158,11 @@
                             color: $black-light;
                             text-overflow: ellipsis;
                             font-family: "Anek Latin";
-                            font-size: 16px;
+                            // font-size: 16px;
+                            font-size: 15px;
                             font-weight: 400;
-                            line-height: 17.6px;
+                            // line-height: 17.6px;
+                            line-height: 16.6px;
                             margin-bottom: 5px;
 
                             p {
@@ -167,13 +175,25 @@
                             margin-top: 20px;
                             color: $black-light;
                             font-family: "Anek Latin";
-                            font-size: 16px;
+                            // font-size: 16px;
+                            font-size: 15px;
                             font-weight: 400;
-                            line-height: 17.6px;
+                            // line-height: 17.6px;
+                            line-height: 16.6px;
                             text-decoration-line: underline;
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1300px) and (min-height:750px){
+    .upcomingEvents{
+        .outer2{
+            .outer3{
+                height:70%;
             }
         }
     }

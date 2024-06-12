@@ -44,9 +44,11 @@
                     color: $brown-dark;
 
                     font-family: barlow;
-                    font-size: 24px;
+                    // font-size: 24px;
+                    font-size: 22px;
                     font-weight: 500;
-                    line-height: 25.8px;
+                    // line-height: 25.8px;
+                    line-height: 23.8px;
                 }
 
                 .innerText2 {
@@ -56,9 +58,12 @@
                     /* height:40%; */
 
                     &> :nth-child(1) {
-                        width: 25px;
-                        height: 25px;
-                        border-radius: 25px;
+                        // width: 25px;
+                        // height: 25px;
+                        // border-radius: 25px;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
                         background-color: $secondary-color;
                         margin-bottom: 3px;
                     }
@@ -66,9 +71,11 @@
                     &> :nth-child(2) {
                         color: $brown-dark;
                         font-family: barlow;
-                        font-size: 16px;
+                        // font-size: 16px;
+                        font-size: 15px;
                         font-weight: 600;
-                        line-height: 16.8px;
+                        // line-height: 16.8px;
+                        line-height: 15.8px;
                         margin-block-start: 2px;
                         margin-block-end: 2px;
                     }
@@ -76,9 +83,11 @@
                     &> :nth-child(3) {
                         color: $brown-dark;
                         font-family: barlow;
-                        font-size: 14px;
+                        // font-size: 14px;
+                        font-size: 13px;
                         font-weight: 400;
-                        line-height: 14.7px;
+                        // line-height: 14.7px;
+                        line-height: 13.7px;
                         margin-block-start: 2px;
                         margin-block-end: 2px;
                     }
@@ -86,9 +95,11 @@
                     &> :nth-child(4) {
                         color: $brown-dark;
                         font-family: "Noto Sans";
-                        font-size: 14px;
+                        // font-size: 14px;
+                        font-size: 13px;
                         font-weight: 500;
-                        line-height: 14.7px;
+                        // line-height: 14.7px;
+                        line-height: 13.7px;
                         margin-block-start: 2px;
                         margin-block-end: 2px;
                     }
@@ -250,7 +261,9 @@
             .content2 {
                 .outerText {
                     .innerText1 {
-                        font-size: 18px;
+                        // font-size: 18px;
+                        // line-height: 21.8px;
+                        font-size: 14px;
                         line-height: 21.8px;
                     }
 
@@ -271,12 +284,13 @@
                     }
 
                     .innerText2> :nth-child(4) {
-                        font-size: 11px;
+                        // font-size: 11px;
+                        font-size: 10px;
                         line-height: 12px;
                     }
                 }
 
-                &__veiwMore {
+                &__viewMore {
                     &> :nth-child(1) {
                         font-size: 25px;
                         line-height: 31.4px;

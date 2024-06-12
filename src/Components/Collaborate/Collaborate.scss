@@ -34,7 +34,8 @@
             &__small {
                 position: relative;
                 width: 85%;
-                height: 60%;
+                // height: 60%;
+                height: 65%;
                 gap: 10px;
                 padding-right: 30px;
 
@@ -115,11 +116,25 @@
     }
 }
 
+@media screen and (max-width:1300px) and (min-height:750px){
+    .collaborate{
+        &__inner{
+            &__content{
+                &__small{
+                    height:50%;
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width:1100px) {
     .collaborate {
         &__inner {
             &__content {
                 &__small {
+                    height:57%;
+
                     &> :nth-child(1) {
                         font-size: 35px;
                         line-height: 35.64px;
@@ -154,8 +169,42 @@
         &__inner {
             width: 85%;
             height: 35%;
+            &__content{
+                &__small{
+                    height:60%;
+                }
+            }
         }
     }
+}
+
+@media screen and (max-width:850px) {
+    .collaborate {
+        &__inner {
+            &__content {
+                &__small {
+                    &> :nth-child(1) {
+                                font-size: 32px;
+        line-height: 34.64px;
+                    }
+                    &> :nth-child(2) {
+                        font-size: 16px;
+        line-height: 22.8px;
+                    }
+                    .collaborate__button{
+                        bottom:-10px;
+                        &__register{
+                            width: 100px;
+                            font-size: 14px;
+                            line-height: 15px;
+                        }
+                        &__learnMore{
+                            width: 120px;
+                            font-size: 14px;
+                            line-height: 15px;
+                        }
+                    }
+                }}}}
 }
 
 @media screen and (max-width:800px) {

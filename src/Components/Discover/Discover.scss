@@ -53,7 +53,8 @@
 
     &__inner {
         width: 80%;
-        height: 95%;
+        // height: 95%;
+        height: 85%;
 
         .discover__heading {
             position: relative;
@@ -106,8 +107,10 @@
                 &> :nth-child(2) {
                     font-family: barlow;
                     font-weight: 600;
-                    font-size: 20px;
-                    line-height: 21px;
+                    // font-size: 20px;
+                    // line-height: 21px;
+                    font-size: 17px;
+                    line-height: 18px;
                     background-image: linear-gradient(to right, $primary-color-light, $secondary-color-light);
                     color: transparent;
                     background-clip: text;

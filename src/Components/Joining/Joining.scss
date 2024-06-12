@@ -37,7 +37,8 @@
             &__heading {
                 position: relative;
                 width: 60%;
-                height: 55%;
+                // height: 55%;
+                height: 70%;
                 margin-bottom: 50px;
 
                 &> :nth-child(1) {
@@ -69,7 +70,8 @@
                     vertical-align: middle;
                     font-family: barlow;
                     font-weight: 500;
-                    font-size: 40px;
+                    // font-size: 40px;
+                    font-size: 36px;
                     line-height: 37.2px;
                     padding-left: 10px;
                     margin-block-start: 0;
@@ -79,7 +81,8 @@
 
             &__buttons {
                 position: absolute;
-                bottom: 0;
+                // bottom: 0;
+                bottom: 15px;
 
                 .joining__register {
                     width: 188px;
@@ -171,6 +174,18 @@
     }
 }
 
+@media screen and (max-width:1300px) and (min-height:750px){
+    .joining{
+        &__inner{
+            &__content{
+                &__heading{
+                    height:50%;
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width:1100px) {
     .joining {
         &__inner {
@@ -194,6 +209,7 @@
                 }
 
                 &__heading {
+                    height:50%;
                     margin-bottom: 80px;
 
                     &> :nth-child(1) {
@@ -207,7 +223,7 @@
                     }
 
                     &> :nth-child(3) {
-                        font-size: 34px;
+                        font-size: 31px;
                         line-height: 32.2px;
                     }
                 }
@@ -276,6 +292,16 @@
             }
         }
     }
+}
+
+@media screen and (max-width:800px){
+    .joining {
+        &__inner {
+            &__content {
+                &__heading{
+                    height:30%;
+                }
+            }}}
 }
 
 @media screen and (max-width:600px) {

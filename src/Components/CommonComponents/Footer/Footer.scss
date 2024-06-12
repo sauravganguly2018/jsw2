@@ -17,9 +17,11 @@
 
         &__heading {
             font-family: "Anek Latin";
-            font-size: 24px;
+            // font-size: 24px;
+            font-size: 23px;
             font-weight: 600;
-            line-height: 25.2px;
+            // line-height: 25.2px;
+            line-height: 24.2px;
             text-align: left;
             color: $white;
             margin-block-start: 0;
@@ -83,11 +85,19 @@
 
         &__signUp__logos {
             display: flex;
-            gap: 16px;
+            // gap: 16px;
+            gap: 20px;
 
             .footer__stay__signUp__logo {
-                width: 36px;
-                height: 36px;
+                // width: 36px;
+                // height: 36px;
+                width: 33px;
+                height: 33px;
+
+                img{
+                    width:100%;
+                    height:100%;
+                }
             }
         }
     }
@@ -104,13 +114,15 @@
         &__items {
             display: flex;
             flex-direction: column;
-            gap: 25px;
+            // gap: 25px;
+            gap: 20px;
             list-style-type: none;
             padding-inline-start: 0;
 
             .footer__links2__item {
                 font-family: "Anek Latin";
-                font-size: 20px;
+                // font-size: 20px;
+                font-size: 18px;
                 font-weight: 500;
                 line-height: 21px;
 
@@ -129,13 +141,15 @@
         &__items {
             display: flex;
             flex-direction: column;
-            gap: 25px;
+            // gap: 25px;
+            gap: 20px;
             list-style-type: none;
             padding-inline-start: 0;
 
             .footer__links3__item {
                 font-family: "Anek Latin";
-                font-size: 20px;
+                // font-size: 20px;
+                font-size: 18px;
                 font-weight: 500;
                 line-height: 21px;
 
@@ -169,6 +183,21 @@
 
         &__links1 {
             display: none;
+        }
+    }
+}
+
+@media screen and (max-width:900px){
+    .footer {
+        &__stay {
+            &__signUp {
+                &__newsLetter {
+                    &__text {
+                        font-size: 8px;
+                        line-height: 10.6px;
+                    }
+                }
+            }
         }
     }
 }
@@ -243,7 +272,8 @@
             &__signUp {
                 &__newsLetter {
                     width: 30%;
-
+                    height:29px;
+                    
                     &__text {
                         font-size: 6px;
                         line-height: 9.6px;
@@ -326,6 +356,19 @@
             &__items {
                 .footer__links3__item {
                     font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:350px){
+    .footer{
+        &__stay{
+            &__signUp__logos{
+                .footer__stay__signUp__logo {
+                    width:20px;
+                    height:20px;
                 }
             }
         }

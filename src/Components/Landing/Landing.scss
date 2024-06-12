@@ -127,7 +127,7 @@
 @media screen and (max-width:1100px) {
     .landing {
         &__languages {
-            width: 65%;
+            width: 66%;
             gap: 15px;
         }
 
@@ -162,7 +162,8 @@
         }
 
         &__languages {
-            width: 80%;
+            // width: 80%;
+            width: 79%;
 
             .landing__language {
                 font-size: 15px;

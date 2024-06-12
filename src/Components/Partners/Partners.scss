@@ -6,7 +6,8 @@
     justify-content: center;
 
     &__inner {
-        width: 65%;
+        // width: 65%;
+        width: 70%;
         display: flex;
 
         &__first {
@@ -41,6 +42,25 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+
+            &>:nth-child(1){
+                filter: saturate(0%);
+            }
+            &>:nth-child(2){
+                filter: saturate(0%);
+            }
+            &>:nth-child(3){
+                filter: saturate(0%);
+            }
+            &>:nth-child(1):hover{
+                filter: saturate(100%);
+            }
+            &>:nth-child(2):hover{
+                filter: saturate(100%);
+            }
+            &>:nth-child(3):hover{
+                filter: saturate(100%);
+            }
         }
     }
 }
@@ -96,7 +116,6 @@
 
                 &> :nth-child(1) {
                     width: 20%;
-                    filter: saturate(0%)
                 }
 
                 &> :nth-child(2) {
