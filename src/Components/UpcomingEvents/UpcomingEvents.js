@@ -3,9 +3,8 @@ import "./UpcomingEvents.scss";
 import ruler from "../../assets/images/small_lining.svg";
 import card1 from "../../assets/images/upcoming1.svg";
 import card2 from "../../assets/images/upcoming2.svg";
-import { Link } from "react-router-dom";
 import Modal from "../CommonComponents/Modal/Modal";
-import Calendar from "../MyCalendarComponent/MyCalendarComponent";
+import Calendar from "../CommonComponents/MyCalendarComponent/MyCalendarComponent";
 
 const UpcomingEvents = () => {
   const [showModal, setShowModal] = useState(null);

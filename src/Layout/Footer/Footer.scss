@@ -1,0 +1,367 @@
+@import '../../Variables.scss';
+
+.footer {
+    width: 100vw;
+    height: 50vh;
+    background-color: $primary-color;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 60px;
+
+    &__stay {
+        width: 50%;
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        &__heading {
+            font-family: "Anek Latin";
+            font-size: 23px;
+            font-weight: 600;
+            line-height: 24.2px;
+            text-align: left;
+            color: $white;
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+
+        &__signUp {
+            width: 100%;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            justify-content: space-between;
+            height: 32px;
+
+            &__inputMail {
+                height: 29px;
+                width: 70%;
+                border-radius: 4px;
+                border: 1px solid $white;
+                padding: 8px 16px;
+                gap: 10px;
+                background-color: transparent;
+                color: $white;
+                font-family: "Noto Sans";
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 12.6px;
+                letter-spacing: -0.005em;
+
+                &::placeholder {
+                    color: $white;
+                }
+            }
+
+            &__newsLetter {
+                height: 32px;
+                width: 28%;
+                border-radius: 48px;
+                padding: 4px 8px 4px 16px;
+                gap: 8px;
+                display: flex;
+                align-items: center;
+                border: none;
+
+                &__text {
+                    font-family: "Anek Latin";
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 12.6px;
+                    color: $primary-color;
+                    margin-block-start: 0;
+                    margin-block-end: 0;
+                }
+
+                &> :nth-child(2) {
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+        }
+
+        &__signUp__logos {
+            display: flex;
+            gap: 20px;
+
+            .footer__stay__signUp__logo {
+                width: 33px;
+                height: 33px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    &__links1 {
+        width: 13%;
+        height: 50px;
+    }
+
+    &__links2 {
+        width: 13%;
+        height: 50px;
+
+        &__items {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            list-style-type: none;
+            padding-inline-start: 0;
+
+            .footer__links2__item {
+                font-family: "Anek Latin";
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 21px;
+
+                &> :first-child {
+                    text-decoration: none;
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    &__links3 {
+        width: 13%;
+        height: 50px;
+
+        &__items {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            list-style-type: none;
+            padding-inline-start: 0;
+
+            .footer__links3__item {
+                font-family: "Anek Latin";
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 21px;
+
+                &> :first-child {
+                    text-decoration: none;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1300px) {
+    .footer {
+        &__stay {
+            &__signUp {
+                &__newsLetter {
+                    &__text {
+                        font-size: 10px;
+                        line-height: 10.6px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .footer {
+        height: 30vh;
+
+        &__links1 {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width:900px) {
+    .footer {
+        &__stay {
+            &__signUp {
+                &__newsLetter {
+                    &__text {
+                        font-size: 8px;
+                        line-height: 10.6px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:800px) {
+    .footer {
+        &__stay {
+            &__signUp {
+                &__newsLetter {
+                    padding: 4px 8px 4px 8px;
+
+                    &__text {
+                        font-size: 7px;
+                        line-height: 10.6px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+    .footer {
+        height: auto;
+        gap: 25px;
+        flex-wrap: wrap;
+
+        &__stay {
+            width: 100%;
+            height: auto;
+
+            &__signUp {
+                &__newsLetter {
+                    padding: 4px 8px 4px 16px;
+                }
+            }
+        }
+
+        &__links2 {
+            width: 40%;
+            height: auto;
+
+            &__items {
+                gap: 20px;
+
+                .footer__links2__item {
+                    font-size: 18px;
+                }
+            }
+        }
+
+        &__links3 {
+            width: 40%;
+            height: auto;
+
+            &__items {
+                gap: 20px;
+
+                .footer__links3__item {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+    .footer {
+        &__stay {
+            gap: 10px;
+
+            &__signUp {
+                &__newsLetter {
+                    width: 30%;
+                    height: 29px;
+
+                    &__text {
+                        font-size: 6px;
+                        line-height: 9.6px;
+                    }
+
+                    &> :nth-child(2) {
+                        width: 14px;
+                        height: 14px;
+                    }
+                }
+            }
+
+            &__signUp__logos {
+                gap: 12px;
+
+                .footer__stay__signUp__logo {
+                    width: 30px;
+                    height: 30px;
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:450px) {
+    .footer {
+        &__stay {
+            &__signUp {
+                &__newsLetter {
+                    padding: 4px 8px 4px 8px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:400px) {
+    .footer {
+        &__stay {
+            &__heading {
+                font-size: 20px;
+            }
+
+            &__signUp {
+                &__newsLetter {
+                    &__text {
+                        font-size: 5px;
+                        line-height: 6.6px;
+                    }
+
+                    &> :nth-child(2) {
+                        width: 10px;
+                        height: 10px;
+                    }
+                }
+            }
+
+            &__signUp__logos {
+                .footer__stay__signUp__logo {
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+        }
+
+        &__links2 {
+            &__items {
+                .footer__links2__item {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        &__links3 {
+            &__items {
+                .footer__links3__item {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:350px) {
+    .footer {
+        &__stay {
+            &__signUp__logos {
+                .footer__stay__signUp__logo {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+}

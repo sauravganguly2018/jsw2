@@ -27,9 +27,7 @@ const Testimonials = () => {
               <p>Shop owner in Mayanagar</p>
             </div>
             <div className="innerText3">
-              <button className="innerText3_button">
-                Learn more
-              </button>
+              <button className="innerText3_button">Learn more</button>
             </div>
           </div>
         </div>
@@ -50,9 +48,7 @@ const Testimonials = () => {
               <p>Shop owner in Mayanagar</p>
             </div>
             <div className="innerText3">
-              <button className="innerText3_button">
-                Learn more
-              </button>
+              <button className="innerText3_button">Learn more</button>
             </div>
           </div>
         </div>
@@ -72,9 +68,7 @@ const Testimonials = () => {
               <p>Shop owner in Mayanagar</p>
             </div>
             <div className="innerText3">
-              <button className="innerText3_button">
-                Learn more
-              </button>
+              <button className="innerText3_button">Learn more</button>
             </div>
           </div>
         </div>
@@ -94,9 +88,7 @@ const Testimonials = () => {
               <p>Shop owner in Mayanagar</p>
             </div>
             <div className="innerText3">
-              <button className="innerText3_button">
-                Learn more
-              </button>
+              <button className="innerText3_button">Learn more</button>
             </div>
           </div>
         </div>

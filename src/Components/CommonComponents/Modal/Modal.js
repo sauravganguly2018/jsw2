@@ -19,7 +19,13 @@ const Modal = (props) => {
         <button className="closeButton" onClick={props.onClose}>
           <IoIosClose style={{ width: "40px", height: "40px" }} />
         </button>
-        <div className="modalImage" style={{ backgroundImage: `url(${props.image})`, backgroundSize: "cover" }}></div>
+        <div
+          className="modalImage"
+          style={{
+            backgroundImage: `url(${props.image})`,
+            backgroundSize: "cover",
+          }}
+        ></div>
         <div className="modalTitle">
           {" "}
           <div className="modalcardSubtitle">{props.date}</div>

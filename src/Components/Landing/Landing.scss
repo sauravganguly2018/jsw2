@@ -1,6 +1,7 @@
 @import '../../Variables.scss';
 
 @keyframes float {
+
     0%,
     100% {
         box-shadow: 0 0 1px 0 $floating-message-color;
@@ -34,7 +35,6 @@
 
     &__languages {
         width: 55%;
-        /* height: 98px; */
         display: flex;
         align-items: center;
         justify-content: center;
@@ -162,7 +162,6 @@
         }
 
         &__languages {
-            // width: 80%;
             width: 79%;
 
             .landing__language {

@@ -1,30 +1,18 @@
 @import '../../Variables.scss';
 
 @keyframes float2 {
-    // 0% {
-    //     width:20%;
-    //     height:20%;
-    //     background-color: $discover-color-light ;
-    // }
-
-    // 100% {
-    //     width:200%;
-    //     height:200%;
-    //     background-color: $discover-color-dark ;
-    // }
-
     0% {
-        opacity:0;
+        opacity: 0;
         background-color: $discover-color-light;
         // border-radius: 0;
-        box-shadow:  0 0 1px 0 $discover-color-light;
+        box-shadow: 0 0 1px 0 $discover-color-light;
     }
 
     100% {
         opacity: 1;
         background-color: $discover-color-dark;
         // border-radius: ;
-        box-shadow:  0 0 2px 500px $discover-color-dark;
+        box-shadow: 0 0 2px 500px $discover-color-dark;
     }
 }
 
@@ -35,6 +23,7 @@
         border-radius: 300px;
         box-shadow: 0 0 2px 600px $discover-color-dark;
     }
+
     100% {
         opacity: 0;
         background-color: $discover-color-light;
@@ -53,7 +42,6 @@
 
     &__inner {
         width: 80%;
-        // height: 95%;
         height: 85%;
 
         .discover__heading {
@@ -87,10 +75,10 @@
             margin-top: 50px;
 
             .discover__card {
-                position:relative;
+                position: relative;
                 width: 32%;
                 height: 45%;
-                overflow:hidden;
+                overflow: hidden;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -107,8 +95,6 @@
                 &> :nth-child(2) {
                     font-family: barlow;
                     font-weight: 600;
-                    // font-size: 20px;
-                    // line-height: 21px;
                     font-size: 17px;
                     line-height: 18px;
                     background-image: linear-gradient(to right, $primary-color-light, $secondary-color-light);
@@ -118,36 +104,25 @@
                     z-index: 1;
                 }
 
-                // &::before{
-                //     content:'';
-                //     position:absolute;
-                //     border-radius: 50%;
-                //     z-index: -1;
-                // }
-
-                // &:hover::before{
-                //     animation: float2 1s forwards;
-                // }
-
-                &::before{
-                    content:"";
-                    position:absolute;
-                    bottom:10%;
-                    left:25%;
-                    z-index:-1;
-                    width:10%;
-                    height:20%;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    bottom: 10%;
+                    left: 25%;
+                    z-index: -1;
+                    width: 10%;
+                    height: 20%;
                     border-radius: 100%;
                     background-color: $discover-color-light;
-                    opacity:0;
+                    opacity: 0;
                 }
 
-                &:hover::before{
+                &:hover::before {
                     animation: float2 0.5s forwards;
                 }
 
-                &:hover>:nth-child(2){
-                    color:$white;
+                &:hover>:nth-child(2) {
+                    color: $white;
                 }
 
                 &:not(:hover)::before {

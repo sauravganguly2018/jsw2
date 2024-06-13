@@ -37,7 +37,6 @@
             &__heading {
                 position: relative;
                 width: 60%;
-                // height: 55%;
                 height: 70%;
                 margin-bottom: 50px;
 
@@ -70,7 +69,6 @@
                     vertical-align: middle;
                     font-family: barlow;
                     font-weight: 500;
-                    // font-size: 40px;
                     font-size: 36px;
                     line-height: 37.2px;
                     padding-left: 10px;
@@ -81,7 +79,6 @@
 
             &__buttons {
                 position: absolute;
-                // bottom: 0;
                 bottom: 15px;
 
                 .joining__register {
@@ -174,12 +171,12 @@
     }
 }
 
-@media screen and (max-width:1300px) and (min-height:750px){
-    .joining{
-        &__inner{
-            &__content{
-                &__heading{
-                    height:50%;
+@media screen and (max-width:1300px) and (min-height:750px) {
+    .joining {
+        &__inner {
+            &__content {
+                &__heading {
+                    height: 50%;
                 }
             }
         }
@@ -209,7 +206,7 @@
                 }
 
                 &__heading {
-                    height:50%;
+                    height: 50%;
                     margin-bottom: 80px;
 
                     &> :nth-child(1) {
@@ -294,14 +291,16 @@
     }
 }
 
-@media screen and (max-width:800px){
+@media screen and (max-width:800px) {
     .joining {
         &__inner {
             &__content {
-                &__heading{
-                    height:30%;
+                &__heading {
+                    height: 30%;
                 }
-            }}}
+            }
+        }
+    }
 }
 
 @media screen and (max-width:600px) {
