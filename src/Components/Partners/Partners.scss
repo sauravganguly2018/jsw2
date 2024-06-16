@@ -6,11 +6,11 @@
     justify-content: center;
 
     &__inner {
-        width: 70%;
+        width: 55%;
         display: flex;
 
         &__first {
-            width: 35%;
+            width: 40%;
             display: flex;
             align-items: center;
             justify-content: flex-start;
@@ -36,7 +36,7 @@
         }
 
         &__second {
-            width: 65%;
+            width: 50%;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -71,7 +71,7 @@
 @media screen and (max-width:1100px) {
     .partners {
         &__inner {
-            width: 80%;
+            width: 70%;
 
             &__first {
                 width: 30%;
@@ -79,6 +79,7 @@
 
             &__second {
                 width: 70%;
+                justify-content: space-evenly;
             }
         }
     }
@@ -110,7 +111,9 @@
             flex-direction: column;
 
             &__first {
-                width: 50%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
             }
 
             &__second {
@@ -140,8 +143,8 @@
 @media screen and (max-width:500px) {
     .partners {
         &__inner {
-            &__first {
-                width: 55%;
+            &__second {
+                justify-content: space-around;
             }
         }
     }
@@ -151,8 +154,6 @@
     .partners {
         &__inner {
             &__first {
-                width: 50%;
-
                 &__div> :nth-child(1) {
                     font-size: 25px;
                     line-height: 25.6px;

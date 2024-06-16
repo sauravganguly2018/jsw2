@@ -1,7 +1,8 @@
 import React from "react";
 import { useState } from "react";
 import "./Joining.scss";
-import woman from "../../assets/images/woman.svg";
+// import woman from "../../assets/images/woman.svg";
+import joining from "../../assets/images/joining.svg";
 import lining from "../../assets/images/lining.svg";
 
 const Joining = () => {
@@ -29,7 +30,7 @@ const Joining = () => {
       <div className="joining__inner">
         <div className="joining__inner__content">
           <div className="joining__inner__content__image">
-            <img src={woman} alt="woman image"></img>
+            <img src={joining} alt="joining image"></img>
           </div>
           <div className="joining__inner__content__heading">
             <p>Join our family of</p>

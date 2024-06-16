@@ -27,10 +27,13 @@
                 display: flex;
                 align-items: flex-start;
                 padding-bottom: 10px;
+                position:relative;
 
                 img {
-                    width: 100%;
-                    height: 100%;
+                    width: 120%;
+                    position: absolute;
+                    bottom: 0;
+                    left: 5%;
                 }
             }
 
@@ -69,7 +72,7 @@
                     vertical-align: middle;
                     font-family: barlow;
                     font-weight: 500;
-                    font-size: 36px;
+                    font-size: 35.5px;
                     line-height: 37.2px;
                     padding-left: 10px;
                     margin-block-start: 0;

@@ -1,7 +1,8 @@
 import React from "react";
 import { useState } from "react";
 import "./Collaborate.scss";
-import collaborators from "../../assets/images/collaborators.svg";
+// import collaborators from "../../assets/images/collaborators.svg";
+import collaborate from "../../assets/images/collaborate.svg";
 
 const Collaborate = () => {
   const [activeButton, setActiveButton] = useState(null);
@@ -26,10 +27,7 @@ const Collaborate = () => {
   return (
     <div className="collaborate">
       <div className="collaborate__inner">
-        <div className="collaborate__inner__image">
-          <img src={collaborators} alt="collaborators image"></img>
-        </div>
-        <div className="collaborate__inner__content">
+      <div className="collaborate__inner__content">
           <div className="collaborate__inner__content__small">
             <p>Collaborate with us!</p>
             <p>
@@ -63,6 +61,9 @@ const Collaborate = () => {
               </button>
             </div>
           </div>
+        </div>
+        <div className="collaborate__inner__image">
+          <img src={collaborate} alt="collaborate image"></img>
         </div>
       </div>
     </div>
