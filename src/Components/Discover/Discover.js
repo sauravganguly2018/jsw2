@@ -12,8 +12,41 @@ import access from "../../assets/images/access.svg";
 // import financial_linkage from "../../assets/images/financial_linkage.svg";
 import financial_linkage2 from "../../assets/images/financial_linkage2.svg";
 import technology from "../../assets/images/technology.svg";
+import DiscoverCard from "../CommonComponents/DiscoverCard/DiscoverCard";
 
 const Discover = () => {
+  const discoversData = [
+    {
+      src: capacity_building2,
+      altImage: "capacity building image",
+      content: "Capacity Building and Skill development",
+    },
+    {
+      src: mentorship2,
+      altImage: "mentorship image",
+      content: "Mentorship and Networking",
+    },
+    {
+      src: access,
+      altImage: "access image",
+      content: "Access to Markets",
+    },
+    {
+      src: technology,
+      altImage: "technology image",
+      content: "Technology and Information Access",
+    },
+    {
+      src: business_tools,
+      altImage: "business tools image",
+      content: "Business Tools",
+    },
+    {
+      src: financial_linkage2,
+      altImage: "Financial Linkage image",
+      content: "Financial Linkages and Schemes",
+    },
+  ];
   return (
     <div className="discover">
       <div className="discover__inner">
@@ -24,30 +57,13 @@ const Discover = () => {
           </div>
         </div>
         <div className="discover__cards">
-          <div className="discover__card">
-            <img src={capacity_building2} alt="capacity building image"></img>
-            <p>Capacity Building and Skill development</p>
-          </div>
-          <div className="discover__card">
-            <img src={mentorship2} alt="mentorship image"></img>
-            <p>Mentorship and Networking</p>
-          </div>
-          <div className="discover__card">
-            <img src={access} alt="access image"></img>
-            <p>Access to Markets</p>
-          </div>
-          <div className="discover__card">
-            <img src={technology} alt="technology image"></img>
-            <p>Technology and Information Access</p>
-          </div>
-          <div className="discover__card">
-            <img src={business_tools} alt="business tools image"></img>
-            <p>Business Tools</p>
-          </div>
-          <div className="discover__card">
-            <img src={financial_linkage2} alt="Financial Linkage image"></img>
-            <p>Financial Linkages and Schemes</p>
-          </div>
+          {discoversData.map((data) => (
+            <DiscoverCard
+              src={data.src}
+              altImage={data.altImage}
+              content={data.content}
+            />
+          ))}
         </div>
       </div>
     </div>

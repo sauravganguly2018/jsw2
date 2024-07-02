@@ -20,7 +20,7 @@
     align-items: center;
     justify-content: center;
     gap: 50px;
-    padding-top: 95px;
+    padding-top: 150px;
 
     .floating__message {
         width: 56px;
@@ -124,6 +124,12 @@
     }
 }
 
+@media screen and (min-width:1024px){
+    .landing{
+        padding-top:50px;
+    }
+}
+
 @media screen and (max-width:1100px) {
     .landing {
         &__languages {
@@ -174,10 +180,15 @@
 }
 
 @media screen and (max-width:500px) {
-    .landing .landing__languages .landing__language {
-        font-size: 10px;
-        line-height: 11px;
-        padding: 10px 14px;
+    .landing{
+        height:auto;
+        // padding-top:150px;
+
+        &.landing__languages .landing__language {
+            font-size: 10px;
+            line-height: 11px;
+            padding: 10px 14px;
+        }
     }
 }
 

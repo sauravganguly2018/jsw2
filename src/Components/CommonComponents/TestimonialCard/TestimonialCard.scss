@@ -1,0 +1,425 @@
+@import "../../../Variables.scss";
+
+.content2 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: $white-bright;
+
+    .outerText {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 80%;
+        // height: 75%;
+
+        .innerText1 {
+            color: $brown-dark;
+            // padding-top:32px;
+            font-family: barlow;
+            font-size: 22px;
+            font-weight: 500;
+            line-height: 23.8px;
+            margin-top: 32px;
+        }
+
+        .innerText2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+
+            &> :nth-child(1) {
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background-color: $secondary-color;
+                margin-bottom: 3px;
+            }
+
+            &> :nth-child(2) {
+                color: $brown-dark;
+                font-family: barlow;
+                font-size: 15px;
+                font-weight: 600;
+                line-height: 15.8px;
+                margin-block-start: 2px;
+                margin-block-end: 2px;
+            }
+
+            &> :nth-child(3) {
+                color: $brown-dark;
+                font-family: barlow;
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 13.7px;
+                margin-block-start: 2px;
+                margin-block-end: 2px;
+            }
+
+            &> :nth-child(4) {
+                color: $brown-dark;
+                font-family: "Noto Sans";
+                font-size: 13px;
+                font-weight: 500;
+                line-height: 13.7px;
+                margin-block-start: 2px;
+                margin-block-end: 2px;
+            }
+        }
+
+        .innerText3 {
+            &>:nth-child(1) {
+                opacity: 0;
+                background-color: transparent;
+                color: $white;
+                font-family: "Noto Sans";
+                font-weight: 700;
+                border: 2px solid $white;
+                border-radius: 15px;
+                padding: 5px 10px;
+                width: auto;
+                height: auto;
+                margin-top: 15px;
+                transition: opacity 1s ease;
+            }
+        }
+    }
+
+    &.viewMore {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__viewMore {
+        width: 80%;
+        align-self: center;
+        justify-self: center;
+
+        &> :nth-child(1) {
+            color: $brown-dark;
+            font-family: "Anek Latin";
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 38.4px;
+            margin-block-start: 0;
+            margin-block-end: 0;
+
+            &> :nth-child(1) {
+                color: $brown-dark;
+            }
+        }
+    }
+
+    &:hover {
+        background-image: linear-gradient(to right, $primary-color, $blue-dark);
+
+        .outerText {
+            .innerText1 {
+                color: $white;
+            }
+
+            .innerText2 {
+                &>:nth-child(2) {
+                    color: $white;
+                }
+
+                &>:nth-child(3) {
+                    color: $white;
+                }
+
+                &>:nth-child(4) {
+                    color: $white;
+                }
+            }
+
+            .innerText3 {
+                &>:nth-child(1) {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1150px){
+    .content2 {
+        .outerText {
+            justify-content: space-around;
+
+            .innerText1 {
+                font-size: 23px;
+            }
+
+            .innerText2> :nth-child(1) {
+                width: 20px;
+                height: 20px;
+                border-radius: 20px;
+            }
+
+            .innerText2> :nth-child(2) {
+                font-size: 15px;
+            }
+
+            .innerText2> :nth-child(3) {
+                font-size: 13px;
+            }
+
+            .innerText2> :nth-child(4) {
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1050px) {
+            .content2 {
+                .outerText {
+                    justify-content: space-evenly;
+
+                    .innerText1 {
+                        font-size: 16px;
+                    }
+
+                    .innerText2> :nth-child(1) {
+                        width: 16px;
+                        height: 16px;
+                        border-radius: 16px;
+                    }
+
+                    .innerText2> :nth-child(2) {
+                        font-size: 13px;
+                    }
+
+                    .innerText2> :nth-child(3) {
+                        font-size: 11px;
+                    }
+
+                    .innerText2> :nth-child(4) {
+                        font-size: 11px;
+                    }
+
+                    .innerText3 {
+                        &> :nth-child(1) {
+                            font-size: 10px;
+                            ;
+                        }
+                    }
+                }
+            }
+        }
+
+@media screen and (max-width:1000px) {
+            .content2 {
+                .outerText {
+                    .innerText1 {
+                        font-size: 14px;
+                        line-height: 21.8px;
+                    }
+
+                    .innerText2> :nth-child(1) {
+                        width: 13px;
+                        height: 13px;
+                        border-radius: 13px;
+                    }
+
+                    .innerText2> :nth-child(2) {
+                        font-size: 13px;
+                        line-height: 14px;
+                    }
+
+                    .innerText2> :nth-child(3) {
+                        font-size: 11px;
+                        line-height: 12px;
+                    }
+
+                    .innerText2> :nth-child(4) {
+                        font-size: 10px;
+                        line-height: 12px;
+                    }
+                }
+
+                &__viewMore {
+                    &> :nth-child(1) {
+                        font-size: 25px;
+                        line-height: 31.4px;
+                    }
+                }
+            }
+        }
+
+@media screen and (max-width:800px) {
+            .content2 {
+                .outerText {
+                    .innerText1 {
+                        font-size: 14px;
+                    }
+
+                    .innerText2> :nth-child(2) {
+                        font-size: 10px;
+                    }
+
+                    .innerText2> :nth-child(3) {
+                        font-size: 7px;
+                    }
+
+                    .innerText2> :nth-child(4) {
+                        font-size: 7px;
+                    }
+
+                    .innerText3 {
+                        &> :nth-child(1) {
+                            font-size: 7px;
+                            padding:6px 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+@media screen and (max-width:600px) {
+            .content2 {
+                .outerText {
+                    .innerText1 {
+                        font-size: 11px;
+                        line-height: 15.8px;
+                    }
+
+                    .innerText2> :nth-child(1) {
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 10px;
+                    }
+
+                    .innerText2> :nth-child(2) {
+                        font-size: 8px;
+                        line-height: 10px;
+                    }
+
+                    .innerText2> :nth-child(3) {
+                        font-size: 7px;
+                        line-height: 9px;
+                    }
+
+                    .innerText2> :nth-child(4) {
+                        font-size: 5px;
+                        line-height: 8px;
+                    }
+
+                    .innerText3 {
+                        &> :nth-child(1) {
+                            font-size: 6px;
+                            padding: 3px 5px;
+                            margin-top: 5px;
+                            border: 1.5px solid $white;
+                        }
+                    }
+                }
+
+                &__viewMore {
+                    &> :nth-child(1) {
+                        font-size: 16px;
+                        line-height: 21.4px;
+                    }
+
+                    .arrow1 {
+                        width: 35px;
+                        height: 35px;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+@media screen and (max-width:450px) {
+            .content2 {
+                .outerText {
+                    .innerText1 {
+                        font-size: 13px;
+                    }
+
+                    .innerText2> :nth-child(1) {
+                        width: 9px;
+                        height: 9px;
+                        border-radius: 9px;
+                    }
+
+                    .innerText2> :nth-child(2) {
+                        font-size: 10px;
+                        line-height: 11px;
+                    }
+
+                    .innerText2> :nth-child(3) {
+                        font-size: 9px;
+                        line-height: 10px;
+                    }
+
+                    .innerText2> :nth-child(4) {
+                        font-size: 8px;
+                        line-height: 9px;
+                    }
+
+                    .innerText3 {
+                        &>:nth-child(1) {
+
+                            font-size: 7px;
+                            padding: 4px 6px;
+                            margin-top: 3px;
+                        }
+                    }
+                }
+
+                &__viewMore {
+                    &> :nth-child(1) {
+                        font-size: 20px;
+                        line-height: 21.4px;
+                    }
+            }
+        }
+    }
+
+@media screen and (max-width: 400px) {
+            .content2 {
+                .outerText {
+                    .innerText1 {
+                        font-size: 12px;
+                    }
+
+                    .innerText2> :nth-child(2) {
+                        font-size: 9px;
+                        line-height: 10px;
+                    }
+
+                    .innerText2> :nth-child(3) {
+                        font-size: 8px;
+                        line-height: 9px;
+                    }
+
+                    .innerText2> :nth-child(4) {
+                        font-size: 7px;
+                        line-height: 8px;
+                    }
+
+                    .innerText3 {
+                        &>:nth-child(1) {
+
+                            font-size: 6px;
+                            padding: 3px 5px;
+                            margin-top: 3px;
+                        }
+                    }
+                }
+            }}
+@media screen and (max-width:350px) {
+            .content2 {
+                .outerText {
+                    .innerText1 {
+                        font-size: 10px;
+                    }
+                }
+            }
+}

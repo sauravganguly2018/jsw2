@@ -2,7 +2,7 @@
 
 .footer {
     width: 100vw;
-    height: 50vh;
+    // height: 50vh;
     background-color: $primary-color;
     display: flex;
     justify-content: space-between;
@@ -10,7 +10,7 @@
 
     &__stay {
         width: 50%;
-        height: 50px;
+        // height: 50px;
         display: flex;
         flex-direction: column;
         gap: 12px;
@@ -99,12 +99,12 @@
 
     &__links1 {
         width: 13%;
-        height: 50px;
+        // height: 50px;
     }
 
     &__links2 {
         width: 13%;
-        height: 50px;
+        // height: 50px;
 
         &__items {
             display: flex;
@@ -129,7 +129,7 @@
 
     &__links3 {
         width: 13%;
-        height: 50px;
+        // height: 50px;
 
         &__items {
             display: flex;
@@ -170,7 +170,7 @@
 
 @media screen and (max-width:1000px) {
     .footer {
-        height: 30vh;
+        // height: 30vh;
 
         &__links1 {
             display: none;

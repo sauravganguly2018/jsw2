@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import swDev from './swDev'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 // import 'antd/dist/antd.min.css';
 

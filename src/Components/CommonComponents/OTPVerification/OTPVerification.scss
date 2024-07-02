@@ -1,0 +1,197 @@
+@import "../../../Variables.scss";
+
+.otpVerification {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+
+    &__inner {
+        width: 100%;
+
+        &__heading {
+            width: 100%;
+            font-family: Barlow;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 21px;
+            text-align: center;
+            color: #1751A4;
+        }
+
+        &__input {
+            width: 100%;
+
+            &__text {
+                font-family: Barlow;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 16.8px;
+                text-align: center;
+                color: $black;
+                margin-top: 25px;
+            }
+
+            &__boxes {
+                display: flex;
+                justify-content: center;
+                margin-top: 15px;
+
+                &__inner {
+                    width: 70%;
+                    gap: 8px;
+                    display: flex;
+                    justify-content: center;
+
+                    .otpVerification__inner__input__box {
+                        width: 33px;
+                        height: 32px;
+                        padding: 5px 12px;
+                        border-radius: 2px;
+                        border: 1px solid #D9D9D9;
+                    }
+                }
+            }
+
+            &__resend {
+                width:225px;
+                text-align: right;
+                font-family: Barlow;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 12.6px;
+                margin-top: 7px;
+                position:relative;
+
+                span {
+                    &.disabled{
+                        color:#7F7F91;
+                    }
+
+                    &.enabled{
+                        background-image: linear-gradient(to right, #1751A4, #0054CD);
+                        color: transparent;
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        cursor:pointer;
+                    }
+                }
+
+                &__progress{
+                    position:absolute;
+                    top:2px;
+                    right:0;
+                }
+            }
+        }
+
+        &__subtitle {
+            width: 100%;
+            margin: auto;
+            display: flex;
+            padding: 8px;
+            margin-top: 20px;
+            gap: 4px;
+            background-color: #F7F7F7;
+
+            &>:nth-child(1) {
+                margin-top: -2px;
+            }
+
+            &__text {
+                font-family: Barlow;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 14.7px;
+
+                p {
+                    margin-block-start: 0;
+                    margin-block-end: 0;
+                }
+
+                &>:nth-child(1) {
+                    color: #BF2C2D;
+                    margin-bottom: 7px;
+                }
+            }
+        }
+
+        &__continue {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            &__button {
+                margin-top: 20px;
+                margin-bottom: 20px;
+                // width: 120px;
+                // height: 35px;
+                width:auto;
+                height:auto;
+                padding: 0 24px;
+                border-radius: 30px;
+                // border: 2px solid #1751A4;
+                // background-image: linear-gradient(to right, #238FCC, #1751A4);
+                // color: transparent;
+                // background-clip: text;
+                // -webkit-background-clip: text;
+                font-family: Barlow;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 16.8px;
+                text-align: center;
+                cursor: pointer;
+
+                &.disabled {
+                    border: 2px solid #9897A6;
+                    color: #9897A6;
+                }
+    
+                &.enabled {
+                    border: 2px solid #1751A4 !important;
+                    background-image: linear-gradient(to right, #238FCC, #1751A4) !important;
+                    color: transparent;
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                }
+            }
+        }
+
+        &__register {
+            width: 90%;
+            display: flex;
+            justify-content: center;
+
+            &__button {
+                margin-top: 20px;
+                margin-bottom: 20px;
+                width: 40%;
+                height: 35px;
+                padding: 0 24px;
+                border-radius: 30px;
+                border: none;
+                background-image: linear-gradient(to right, #238FCC, #1751A4);
+                color: $white;
+                font-family: Barlow;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 16.8px;
+                text-align: center;
+                cursor: pointer;
+            }
+
+            &.disabled {
+                border: 2px solid #9897A6;
+                color: #9897A6;
+            }
+
+            &.enabled {
+                border: 2px solid #1751A4;
+                background-image: linear-gradient(to right, #238FCC, #1751A4);
+                color: transparent;
+                background-clip: text;
+                -webkit-background-clip: text;
+            }
+        }
+    }
+}

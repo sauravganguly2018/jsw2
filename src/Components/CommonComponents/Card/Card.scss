@@ -1,6 +1,6 @@
 @import "../../../Variables.scss";
 
-.card {
+.vaaniCard {
     width: 45%;
     height: 95%;
     border-radius: 4px 24px 4px 24px;
@@ -14,7 +14,7 @@
 
     .cardContent {
         width: 100%;
-        height: 50%;
+        // height: 50%;
         padding: 16px;
 
         .cardSubtitle {
@@ -69,7 +69,7 @@
 }
 
 @media screen and (max-width:1150px) {
-    .card {
+    .vaaniCard {
         .cardContent {
             .cardSubtitle {
                 font-size: 13px;
@@ -81,7 +81,7 @@
 
             .cardText {
                 font-size: 13px;
-                margin-bottom: 18px;
+                margin-bottom: 10px;
             }
 
             .learnMore {
@@ -92,25 +92,25 @@
 }
 
 @media screen and (max-width:1050px) {
-    .card {
+    .vaaniCard {
         .card__image {
-            height: 50%;
+            // height: 50%;
         }
 
         .cardContent {
-            height: 45%;
+            // height: 45%;
 
             .cardSubtitle {
                 font-size: 12px;
             }
 
             .cardHeading {
-                font-size: 11px;
+                font-size: 15px;
             }
 
             .cardText {
                 font-size: 12px;
-                margin-bottom: 15px;
+                margin-bottom: 10px;
             }
 
             .learnMore {
@@ -121,14 +121,15 @@
 }
 
 @media screen and (max-width:950px) {
-    .card {
+    .vaaniCard {
         .cardContent {
             .cardSubtitle {
                 font-size: 10px;
             }
 
             .cardHeading {
-                font-size: 12px;
+                font-size: 14px;
+                line-height: 18px;
             }
 
             .cardText {
@@ -144,19 +145,22 @@
 }
 
 @media screen and (max-width:800px) {
-    .card {
+    .vaaniCard {
         .cardContent {
+            padding: 10px 15px;
             .cardSubtitle {
                 font-size: 9px;
             }
 
             .cardHeading {
-                font-size: 11px;
+                font-size: 12px;
+                line-height:16px;
             }
 
             .cardText {
                 font-size: 9px;
-                margin-bottom: 8px;
+                line-height:14px;
+                margin-bottom: 0;
             }
 
             .learnMore {
@@ -166,38 +170,58 @@
     }
 }
 
-@media screen and (max-width:600px) {
-    .card {
+@media screen and (max-width:700px) {
+    .vaaniCard {
         .cardContent {
             .cardSubtitle {
-                font-size: 7px;
+                font-size: 8px;
             }
 
             .cardHeading {
-                font-size: 8px;
-                line-height: 10px;
+                font-size: 11px;
+                line-height:15px;
             }
 
             .cardText {
-                font-size: 6px;
-                margin-bottom: 0px;
-                line-height: 10.6px;
+                font-size: 8px;
+                line-height:13px;
+                margin-bottom: 0;
             }
         }
     }
 }
 
-@media screen and (max-width:450px) {
-    .card {
-        .card__image {
-            height: 50%;
-        }
-
+@media screen and (max-width:600px) {
+    .vaaniCard {
         .cardContent {
-            padding: 12px;
+            padding: 10px 13px;
 
             .cardSubtitle {
-                font-size: 6px;
+                font-size: 6.5px;
+            }
+
+            .cardHeading {
+                font-size: 9px;
+                line-height: 12px;
+            }
+
+            .cardText {
+                font-size: 6.5px;
+                line-height: 10.6px;
+            }
+
+            .learnMore{
+                font-size: 8px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+    .vaaniCard {
+        .cardContent {
+            .cardSubtitle {
+                font-size: 5.5px;
             }
 
             .cardHeading {
@@ -205,8 +229,7 @@
             }
 
             .cardText {
-                font-size: 6px;
-                margin-bottom: 5px;
+                font-size: 5.5px;
             }
 
             .learnMore {
@@ -217,65 +240,65 @@
     }
 }
 
-@media screen and (max-width:450px) and (min-height:750px) {
-    .card {
-        .card__image {
-            height: 55%;
-        }
+@media screen and (max-width:450px) {
+    .vaaniCard {
+        height:auto;
 
         .cardContent {
-            .cardSubtitle {
-                font-size: 7px;
-            }
+            padding: 10px;
 
             .cardHeading {
-                font-size: 7px;
+                font-size: 10px;
+                line-height: 13px;
+            }
+
+            .cardSubtitle {
+                font-size: 7.5px;
+        line-height: 8.4px;
             }
 
             .cardText {
-                font-size: 7px;
-                margin-bottom: 0;
+                font-size: 7.5px;
+                line-height: 10.5px;
             }
 
-            .learnMore {
-                font-size: 7px;
+            .learnMore{
+                font-size: 9px;
+                line-height: 9.6px;
             }
         }
     }
 }
 
-@media screen and (max-width:400px) {
-    .card {
+@media screen and (max-width:450px) {
+    .vaaniCard {
         .cardContent {
-            padding: 10px;
-
             .cardHeading {
-                font-size: 6px;
+                font-size: 9px;
+                line-height: 12px;
             }
 
             .cardSubtitle {
-                font-size: 6px;
-                line-height: 6.4px;
-            }
-
-            .cardHeading {
-                line-height: 7px
+                font-size: 6.5px;
+        line-height: 7.4px;
             }
 
             .cardText {
-                margin-bottom: 0;
-                line-height: 5.6px;
+                font-size: 6.5px;
+                line-height: 9.5px;
+            }
+
+            .learnMore{
+                font-size: 8px;
+                line-height: 8.6px;
             }
         }
     }
 }
 
 @media screen and (max-width:350px) {
-    .card {
+    .vaaniCard {
         .cardContent {
-            .cardText {
-                line-height: 8.6px;
-            }
-        }
-    }
-}
+            .cardSubtitle {
+                font-size: 6px;
+            }}}}

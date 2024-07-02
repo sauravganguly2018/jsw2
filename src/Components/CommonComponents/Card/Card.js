@@ -13,7 +13,7 @@ const Card = (props) => {
   };
 
   return (
-    <div className={`card card${props.id}`}>
+    <div className={`vaaniCard card${props.id}`}>
       <div
         className="card__image"
         style={{

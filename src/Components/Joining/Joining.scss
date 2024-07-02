@@ -3,20 +3,20 @@
 
 .joining {
     width: 100vw;
-    height: 100vh;
+    // height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 95px;
+    padding-top: 200px;
 
     &__inner {
         width: 80%;
-        height: 90%;
+        // height: 100%;
 
         &__content {
             position: relative;
             width: 90%;
-            height: 70%;
+            // height: 70%;
             margin: auto;
             display: flex;
             align-items: flex-end;
@@ -27,7 +27,7 @@
                 display: flex;
                 align-items: flex-start;
                 padding-bottom: 10px;
-                position:relative;
+                position: relative;
 
                 img {
                     width: 120%;
@@ -40,14 +40,14 @@
             &__heading {
                 position: relative;
                 width: 60%;
-                height: 70%;
-                margin-bottom: 50px;
+                // height: 70%;
+                margin-bottom: 40px;
 
                 &> :nth-child(1) {
                     font-family: barlow;
                     font-weight: 700;
-                    font-size: 48px;
-                    line-height: 50.4px;
+                    font-size: 46px;
+                    line-height: 47.4px;
                     margin-block-start: 0;
                     margin-block-end: 0;
                 }
@@ -56,8 +56,8 @@
                     display: inline;
                     font-family: barlow;
                     font-weight: 700;
-                    font-size: 75px;
-                    line-height: 69.75px;
+                    font-size: 67px;
+                    line-height: 66.75px;
                     vertical-align: middle;
                     margin-block-start: 0;
                     margin-block-end: 0;
@@ -72,8 +72,8 @@
                     vertical-align: middle;
                     font-family: barlow;
                     font-weight: 500;
-                    font-size: 35.5px;
-                    line-height: 37.2px;
+                    font-size: 29.5px;
+                    line-height: 30.2px;
                     padding-left: 10px;
                     margin-block-start: 0;
                     margin-block-end: 0;
@@ -81,8 +81,10 @@
             }
 
             &__buttons {
-                position: absolute;
+                // position: absolute;
                 bottom: 15px;
+                margin-top: 40px;
+                margin-bottom:32px;
 
                 .joining__register {
                     width: 188px;
@@ -142,13 +144,14 @@
         }
 
         &__data {
-            width: 55%;
-            height: 30%;
+            width: 65%;
+            // height: 30%;
             display: flex;
             justify-content: space-between;
             gap: 30px;
             margin: auto;
             align-items: flex-end;
+            margin-top:32px;
 
             &__value> :nth-child(1) {
                 font-family: barlow;
@@ -179,7 +182,7 @@
         &__inner {
             &__content {
                 &__heading {
-                    height: 50%;
+                    // height: 50%;
                 }
             }
         }
@@ -189,7 +192,7 @@
 @media screen and (max-width:1100px) {
     .joining {
         &__inner {
-            width: 90%;
+            width: 100%;
 
             &__content {
                 &__buttons {
@@ -209,8 +212,8 @@
                 }
 
                 &__heading {
-                    height: 50%;
-                    margin-bottom: 80px;
+                    // height: 50%;
+                    margin-bottom: 40px;
 
                     &> :nth-child(1) {
                         font-size: 43px;
@@ -218,7 +221,7 @@
                     }
 
                     &> :nth-child(2) {
-                        font-size: 70px;
+                        font-size: 65px;
                         line-height: 64.75px;
                     }
 
@@ -251,10 +254,10 @@
         &__inner {
             &__content {
                 width: 95%;
-                height: 50%;
+                // height: 50%;
 
                 &__heading {
-                    height: 25%;
+                    // height: 25%;
 
                     &> :nth-child(1) {
                         font-size: 36px;
@@ -294,12 +297,87 @@
     }
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:900px) {
     .joining {
         &__inner {
             &__content {
                 &__heading {
-                    height: 30%;
+                    margin-bottom: 30px;
+
+                    &>:nth-child(1) {
+                        font-size: 35px;
+                        line-height: 36.4px;
+                    }
+
+                    &>:nth-child(2) {
+                        font-size: 48px;
+                        line-height: 49.75px;
+                    }
+
+                    &>:nth-child(3) {
+                        font-size: 24px;
+                        line-height: 25.2px;
+                    }
+                }
+
+                &__buttons {
+                    .joining__register {
+                        padding: 12px 21px;
+                        font-size: 20px;
+                        line-height: 21.2px;
+                        height: auto;
+                        width: 150px;
+                    }
+
+                    .joining__login {
+                        padding: 12px 21px;
+                        height: auto;
+                        width: 100px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:700px) {
+    .joining {
+        &__inner {
+            &__data{
+                width:70%;
+
+                &__value{
+                    &>:nth-child(1){
+                        font-size: 60px;
+                        line-height: 60px;
+                    }
+                    &>:nth-child(2){
+                        font-size: 20px;
+                        line-height: 21.5px;
+                    }
+                }
+            }
+
+            &__content {
+                &__heading {
+                    &>:nth-child(1) {
+                        font-size: 30px;
+                        line-height: 31.4px;
+                    }
+
+                    &>:nth-child(2) {
+                        font-size: 42px;
+                        line-height: 43.75px;
+                    }
+
+                    &>:nth-child(3) {
+                        font-size: 20px;
+                        line-height: 21.2px;
+                    }
+                }
+
+                &__buttons {
+                    margin-top: 20px;
                 }
             }
         }
@@ -311,7 +389,7 @@
         &__inner {
 
             &__content {
-                height: 50%;
+                // height: 50%;
 
                 &__image {
                     padding-bottom: 3px;
@@ -340,7 +418,7 @@
                 &__buttons {
                     position: relative;
                     bottom: 20px;
-                    padding-top: 30px;
+                    padding-top: 20px;
 
                     .joining__register {
                         height: auto;
@@ -365,13 +443,13 @@
                 gap: 0;
 
                 &__value> :nth-child(1) {
-                    font-size: 40px;
-                    line-height: 40px;
+                    font-size: 50px;
+                    line-height: 50px;
                 }
 
                 &__value> :nth-child(2) {
-                    font-size: 16px;
-                    line-height: 16.5px;
+                    font-size: 18px;
+                    line-height: 18.5px;
                 }
             }
         }
@@ -400,6 +478,8 @@
                 }
 
                 &__buttons {
+                    margin-bottom:10px;
+
                     .joining__register {
                         width: 75px;
                         font-size: 10px;
@@ -417,16 +497,16 @@
             }
 
             &__data {
-                height: 20%;
+                // height: 20%;
 
                 &__value> :nth-child(1) {
-                    font-size: 35px;
-                    line-height: 35px;
+                    font-size: 40px;
+                    line-height: 40px;
                 }
 
                 &__value> :nth-child(2) {
-                    font-size: 13px;
-                    line-height: 13.5px;
+                    font-size: 14px;
+                    line-height: 14.5px;
                 }
             }
         }
@@ -453,6 +533,9 @@
                 }
 
                 &__buttons {
+                    padding-top:11px;
+                    margin-bottom: 0;
+
                     .joining__register {
                         width: 70px;
                         font-size: 9px;

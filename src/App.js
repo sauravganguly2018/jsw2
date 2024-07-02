@@ -9,6 +9,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Provider } from "react-redux";
 import store from "./store/index";
 import Home from "./Pages/Home/Home";
+import PartnerRegistration from "./Pages/PartnerRegistration/PartnerRegistration";
 import { FontSizeProvider } from "./Components/FontSizeContext";
 
 // Create a client for React Query
@@ -23,6 +24,7 @@ function App() {
             <Router>
               <Routes>
                 <Route path="/home" element={<Home />} />
+                <Route path="/partnerRegistration" element={<PartnerRegistration/>} />
                 <Route path="*" element={<Navigate to="/home" />} />
               </Routes>
             </Router>

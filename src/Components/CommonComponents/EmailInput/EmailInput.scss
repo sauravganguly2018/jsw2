@@ -1,0 +1,159 @@
+@import "../../../Variables.scss";
+
+.email {
+    position: relative;
+    width: 90%;
+
+    &__input {
+        width: 100%;
+        height: 28px;
+        padding: 8px;
+        border: none;
+        border-bottom: 2px solid #AFAEBA;
+        outline: none;
+
+        &.checking{
+            border-bottom: 2px solid #1751A4;
+        }
+
+        &.valid{
+            border-bottom: 2px solid #238FCC;
+        }
+
+        &.invalid{
+            border-bottom: 2px solid #BF2C2D;
+        }
+
+        &.blank{
+            border-bottom: 2px solid #BF2C2D;
+        }
+
+        &.otpsent{
+            border-bottom: 2px solid #238FCC;
+        }
+
+        &.existing{
+            border-bottom: 2px solid #238FCC;
+        }
+
+        &.incorrectotp{
+            border-bottom: 2px solid #238FCC;
+        }
+
+        &.maxattempts{
+            border-bottom: 2px solid #238FCC;
+        }
+        &.openotpemail{
+            border-bottom: 2px solid #238FCC;
+        }
+    }
+
+    &__spinner {
+        position: absolute;
+        top: 3px;
+        right: 5px;
+    }
+
+    &__error_bold {
+        width: fit-content;
+        position: absolute;
+        top: 3px;
+        right: 5px;
+    }
+
+    &__valid_bold {
+        width: fit-content;
+        position: absolute;
+        top: 0;
+        right: 5px;
+    }
+
+    &__subtitle {
+        margin-top: 5px;
+        width: 100%;
+        height: 36px;
+        display: flex;
+        align-items: center;
+
+        // padding:8px;
+        &__checking {
+            width: 100%;
+            height: 100%;
+            background-color: $white-bright;
+            padding: 8px;
+            font-family: Barlow;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 14.7px;
+            display: flex;
+            align-items: center;
+        }
+
+        &__invalidEmail {
+            font-family: Barlow;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 14.7px;
+            display: flex;
+            align-items: center;
+            padding: 8px;
+            background-color: $white-bright;
+            width: 100%;
+            height: 100%;
+            color: #BF2C2D;
+            gap: 5px;
+        }
+
+        &__emailExist {
+            font-family: Barlow;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 14.7px;
+            display: flex;
+            align-items: center;
+            padding: 8px;
+            width: 100%;
+            height: 100%;
+            color: #238FCC;
+            background-color: $white-bright;
+        }
+
+        &__validEmail {
+            font-family: Barlow;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 14.7px;
+            display: flex;
+            align-items: center;
+            padding: 8px;
+            width: 100%;
+            height: 100%;
+            color: #238FCC;
+            background-color: $white-bright;
+        }
+
+        &__emailEdit {
+            font-family: Barlow;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 14.7px;
+            display: flex;
+            align-items: center;
+            padding: 8px;
+            width: 100%;
+            height: 100%;
+            color: $black;
+            background-color: $white-bright;
+
+            span{
+                font-weight: 500;
+                color:#1751A4;
+                padding-left: 3px;
+            }
+        }
+    }
+
+    .clickable {
+        cursor: pointer;
+    }
+}

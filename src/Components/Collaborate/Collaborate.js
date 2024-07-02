@@ -3,6 +3,7 @@ import { useState } from "react";
 import "./Collaborate.scss";
 // import collaborators from "../../assets/images/collaborators.svg";
 import collaborate from "../../assets/images/collaborate.svg";
+import { Link } from "react-router-dom";
 
 const Collaborate = () => {
   const [activeButton, setActiveButton] = useState(null);
@@ -35,6 +36,7 @@ const Collaborate = () => {
               in India
             </p>
             <div className="collaborate__button">
+              <Link to="/partnerRegistration">
               <button
                 className={`collaborate__button__register ${
                   activeButton === 0 || hoveredButton === 0
@@ -47,6 +49,7 @@ const Collaborate = () => {
               >
                 Register
               </button>
+              </Link>
               <button
                 className={`collaborate__button__learnMore ${
                   activeButton === 1 || hoveredButton === 1
